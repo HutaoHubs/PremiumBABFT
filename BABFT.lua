@@ -26,6 +26,18 @@ Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
+local Tab1 = Window:MakeTab({
+	Name = "Shop",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
 local Tab2 = Window:MakeTab({
 	Name = "Players",
 	Icon = "rbxassetid://4483345998",
@@ -122,6 +134,71 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/HutaoHubs/CrashServe
   	end    
 })
 
+Tab1:AddButton({
+	Name = "Buy Common Chest|5 Golds",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/HutaoHubs/Players/main/Commonchest.lua'),true))()
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab1:AddButton({
+	Name = "Buy Uncommon Chest|15 Golds",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/HutaoHubs/Players/main/Uncommonchest.lua'),true))()
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab1:AddButton({
+	Name = "Buy Rare Chest|45 Golds",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/HutaoHubs/Players/main/Rarechest.lua'),true))()
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab1:AddButton({
+	Name = "Buy Epic Chest|135 Golds",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/HutaoHubs/Players/main/EpicChest.lua'),true))()
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab1:AddButton({
+	Name = "Buy Legendary Chest|405 Golds",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/HutaoHubs/Players/main/LegendaryChest.lua'),true))()
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
@@ -152,3 +229,30 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/HutaoHubs/Players/ma
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
 ]]
+
+Tab3:AddButton({
+	Name = "Founder 1: Yukari",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/HutaoHubs/Players/main/Commonchest.lua'),true))()
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+Tab3:AddButton({
+	Name = "Founder 2: Restu",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/HutaoHubs/Players/main/Commonchest.lua'),true))()
+      		print("button pressed")
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
